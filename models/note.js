@@ -8,7 +8,7 @@ const NoteModel =sequelize.define('note',{
     title: DataTypes.STRING,
     content : DataTypes.STRING,
     link : DataTypes.TEXT,  // string limitado a 256, url mas largas de 256 caracteres?
-    createdate: DataTypes.DATE
+    createdate: DataTypes.DATE // Dato repetitivo con campo createdAt
 })
 
 module.exports = {NoteModel}
